@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <?define ProductVersion="<?version-long>" ?>
+    <?define UpgradeCode="8282b90a-cb51-4c02-a1c1-ecfcff9861bf"?>
+    <?define ProductCode="67d68e4a-82d2-4a7d-a909-cfce92dbe71a"?>
+    <?define VersionShort="<?version-short>" ?>
+    <Product Id="$(var.ProductCode)" Name="UserPlugins" Language="1033" Version="$(var.ProductVersion)" Manufacturer="Default Manufacturer" UpgradeCode="$(var.UpgradeCode)">
+        <Package Description="XenCenter Plugins" InstallerVersion="200" Compressed="yes" />
+        <Media Id="1" Cabinet="UserPluginscab.cab" EmbedCab="yes" />
+        <Directory Id="TARGETDIR" Name="SourceDir">
+            <Directory Id="ProgramFilesFolder">
+                <Directory Id="Citrix" Name="Citrix">
+                    <Directory Id="INSTALLDIR" ShortName="XenCente" Name="XenCenter">
+                        <Directory Id="XCPlugins" Name="Plugins" />
+                    </Directory>
+                </Directory>
+            </Directory>
+            <Directory Id="ProgramMenuFolder" />
+            <Directory Id="DesktopFolder" />
+        </Directory>
+      <!--<UIRef Id="WixUI_Minimal" />-->
+      <UIRef Id="WixUI_ErrorProgressText" />
+        <Property Id="Install_All" Value="0" />
+        <Property Id="INSTALLDIR">
+            <RegistrySearch Id="XenCenterRegistryLM" Type="raw" Root="HKLM" Key="Software\Citrix\XenCenter" Name="InstallDir" />
+            <RegistrySearch Id="XenCenterRegistryCU" Type="raw" Root="HKCU" Key="Software\Citrix\XenCenter" Name="InstallDir" />
+        </Property>
+        <Property Id="WIXUI_INSTALLDIR" Value="INSTALLDIR" />
+        <!--<Property Id="FRAMEWORK20">
+            <RegistrySearch Id="Framework20Registry" Type="raw" Root="HKLM" Key="Software\Microsoft\NET Framework Setup\NDP\v2.0.50727" Name="Install" />
+        </Property>
+        <Property Id="POWERSHELL10">
+            <RegistrySearch Id="PowerShell10Registry" Type="raw" Root="HKLM" Key="Software\Microsoft\PowerShell\1" Name="Install" />
+        </Property>
+        -->
+        <Property Id="ARPPRODUCTICON" Value="XenCenterICO" />
+        <Upgrade Id="$(var.UpgradeCode)">
+          <!--<UpgradeVersion Property="UPGRADEFOUND" ExcludeLanguages="yes" Minimum="0.0.0" IncludeMinimum="yes" Maximum="$(var.ProductVersion)" IncludeMaximum="yes" />-->
+          <UpgradeVersion OnlyDetect="yes" Minimum="$(var.ProductVersion)" Property="NEWERVERSIONDETECTED" IncludeMinimum="no" />
+          <UpgradeVersion OnlyDetect="no" Maximum="$(var.ProductVersion)" Property="OLDERVERSIONBEINGUPGRADED" IncludeMaximum="no" />
+          <UpgradeVersion OnlyDetect="yes" ExcludeLanguages="yes" Property="NEWERPRODUCTFOUND" Minimum="$(var.ProductVersion)" IncludeMinimum="no" />
+        </Upgrade>
+        <!--<CustomAction Id="PreventDowngrading" Error="There is a newer product already installed" />-->
+        <!--<Condition Message=".NET Framework 2.0 is not present on the computer.">
+      FRAMEWORK20 = "#1"
+    </Condition>
+        <Condition Message="Microsoft PowerShell 1.0 is not present on the computer.">
+      POWERSHELL10 = "#1"
+    </Condition>
+    -->
+        <!--<InstallUISequence>
+            <FindRelatedProducts Sequence="1100" />
+            <ExecuteAction Sequence="1150" />
+        </InstallUISequence>
+        -->
+        <InstallExecuteSequence>
+            <AppSearch Sequence="50" />
+            <LaunchConditions Sequence="100" />
+            <ValidateProductID Sequence="700" />
+            <CostInitialize Sequence="800" />
+            <FileCost Sequence="900" />
+            <CostFinalize Sequence="1000" />
+            <FindRelatedProducts Sequence="1100" />
+            <!--<Custom Action="PreventDowngrading" Sequence="1101">NEWERPRODUCTFOUND</Custom>-->
+            <MigrateFeatureStates Sequence="1200" />
+            <InstallValidate Sequence="1400" />
+            <InstallInitialize Sequence="1500" />
+            <RemoveExistingProducts Sequence="1502" />
+            <ProcessComponents Sequence="1600" />
+            <UnpublishFeatures Sequence="1800" />
+            <RemoveRegistryValues Sequence="2600" />
+            <RemoveShortcuts Sequence="3200" />
+            <RemoveFiles Sequence="3500" />
+            <InstallFiles Sequence="4000" />
+            <CreateShortcuts Sequence="4500" />
+            <WriteRegistryValues Sequence="5000" />
+            <RegisterUser Sequence="6000" />
+            <RegisterProduct Sequence="6100" />
+            <PublishFeatures Sequence="6300" />
+            <PublishProduct Sequence="6400" />
+            <InstallFinalize Sequence="6600" />
+        </InstallExecuteSequence>
+    </Product>
+</Wix>
