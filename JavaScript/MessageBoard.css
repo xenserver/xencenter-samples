@@ -1,0 +1,113 @@
+body 
+{
+	font-family: "Verdana", sans-serif;
+	background-color: #b3d0e6;
+}
+
+.linkLabel
+{
+	margin-left: 8px;
+	font-size: 9px;
+	cursor: hand;
+	text-decoration: underline;
+}
+
+.bottomButtons
+{
+	margin-top: 10px;
+}
+
+.mainHeading 
+{
+	font-size: 16px;
+	margin-bottom: 4px;
+}
+
+.regularBodyText
+{
+	font-size: 12px;
+	margin-bottom: 22px;
+	padding-left: 8px;
+}
+
+.messageBox
+{
+	width: 100%;
+	border: 1px solid #CCCCCC;
+	margin-left: 8px;
+	margin-top: 10px;
+}
+
+.messageTitleBar
+{
+	width: 100%;
+	border-bottom: 1px solid #CCCCCC;
+	background-color: #EEEEEE;
+	padding: 2px 2px 2px 2px;
+}
+
+.messageTitle
+{
+	font-size: 10px;
+	margin-right: 5px;
+	font-weight: bold;
+}
+
+.messageAuthor
+{
+	font-size: 10px;
+	margin-right: 5px;
+}
+
+.messageDate
+{
+	font-size: 10px;
+}
+
+.messageBody
+{
+	font-size: 9px;
+	width: 100%;
+	padding: 4px 4px 4px 4px;
+}
+
+.messageFooter
+{
+	width: 100%;
+	text-align: right;
+	margin: 4px 4px 4px 4px;
+}
+
+.rowDiv
+{
+	width: 100%;
+	margin-top: 20px;
+}
+
+.borderWrapperTop
+{
+	margin: 0px;
+	width: 100%;
+	border-top: 1px solid #5c94cd;
+	border-left: 1px solid #5c94cd;
+	border-right: 1px solid #5c94cd;
+	padding:0px;
+	background-color: #FFFFFF;
+}
+.borderWrapperBottom
+{
+	margin: 0px;
+	width: 100%;
+	border: 1px solid #5c94cd;
+	padding:10px;
+	background-color: #FFFFFF;
+}
+
+img
+{
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
+	vertical-align: text-bottom;
+}
+

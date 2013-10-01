@@ -1,0 +1,29 @@
+<XenCenterPlugin xmlns="http://www.citrix.com/XenCenter/Plugins/schema" version="1" plugin_version="1.0.0.0">
+	<TabPage 
+	name="Message Board" 
+	url="Plugins/xenserver.org/MessageBoard/MessageBoard.html" 
+	relative="true" 
+	credentials="true" 
+	search="70ecbca9-20e7-4f57-b079-fe3aab968cbc"/>
+	<Search 
+		uuid="70ecbca9-20e7-4f57-b079-fe3aab968cbc" 
+		name="MessageBoardObjects"
+		major_version="2"
+		minor_version="0"
+		show_expanded="yes">
+        <Query>
+            <QueryScope>
+                <Pool />
+                <Server />
+                <VM />
+                <Snapshot />
+                <UserTemplate />
+                <DefaultTemplate />
+                <RemoteSR />
+                <LocalSR />
+                <VDI />
+                <Network />
+            </QueryScope>
+        </Query> 
+    </Search>
+</XenCenterPlugin>

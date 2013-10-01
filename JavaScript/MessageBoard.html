@@ -1,0 +1,51 @@
+<html>
+<head>
+  <script type="text/javascript" src="jquery-1.3.2.js"></script>
+  <script type="text/javascript" src="jquery.rpc.js"></script>
+  <script type="text/javascript" src="MessageBoard.js"></script>
+  <link type="text/css" href="MessageBoard.css" rel="stylesheet"></link>
+</head>
+<body>
+<div class="borderWrapperTop">
+	<img src="images/header.png">
+</div>
+<div class="borderWrapperBottom" id="content">
+	<div class="rowDiv">
+		<div class="mainHeading" id="statusHeading">
+			Current Status:
+		</div>
+		<div class="regularBodyText">
+			<span id="statusText">None</span>
+			<span class="linkLabel" onClick="EditStatus()" href="">(edit)</span>
+		</div>
+		<div class="mainHeading" id="descriptionHeading">
+			Description:
+		</div>
+		<div class="regularBodyText" id="descriptionText">
+			None
+		</div>
+		<div class="mainHeading" id="tagsHeading">
+			Tags:
+		</div>
+		<div class="regularBodyText" id="tagsText">
+			None
+		</div>
+	</div>
+	<br />
+	<div class="rowDiv">
+		<div class="mainHeading" id="messagesHeading">
+			Messages:
+			<div id="messagesDiv">
+			</div> 
+		</div>
+	</div>
+	<div class="bottomButtons">
+			<span class="linkLabel" onClick="AddMessage()">Add message</span>
+			<span class="linkLabel" onClick="ClearAll()">Clear plugin data</span>
+	</div>
+</div>
+<div class="borderWrapperBottom" id="errorContent">
+	There has been an unexpected error with the plugin: <span id="errorMessage">Unknown Error</span>
+</div>
+</body>
+</html>
