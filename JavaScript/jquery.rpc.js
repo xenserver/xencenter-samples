@@ -1,5 +1,5 @@
 /*
- This plugin for jquery was written by kamanashisroy and is available at http://plugins.jquery.com/project/rpc
+ This plug-in for jquery was written by kamanashisroy and is available at http://plugins.jquery.com/project/rpc
  The code is licensed under GPL 2 http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  
  It has been modified for use with XenCenter 5.6 to enable XenCenter XML-RPC passthrough

@@ -1,29 +1,26 @@
-Echo Run this make file from a Visual Sutdio Command Prompt
-Echo PowerShell version 2.0 or higher is required to run this
-Echo WiX 2.0 or higher is assumed installed to compile the installer
-Echo Building resources ..
-Del .\plugins\xenserver.org\MessageBoard\*.* /q
-Del .\plugins\xenserver.org\MessageBoard\images\*.* /q
-Del .\plugins\*.* /q
-cd .\output
-Del *.* /q
-ResGen ../MessageBoard.resx MessageBoard.resources
-al /t:lib /embed:MessageBoard.resources /culture:0x007F /out:MessageBoard.resoures.dll
-cd ..
-copy *.css .\plugins\xenserver.org\MessageBoard
-copy *.html .\plugins\xenserver.org\MessageBoard
-copy *.css .\plugins\xenserver.org\MessageBoard
-copy *.gif .\plugins\xenserver.org\MessageBoard
-copy *.js .\plugins\xenserver.org\MessageBoard
-copy *.xml .\plugins\xenserver.org\MessageBoard
-copy .\images\*.png .\plugins\xenserver.org\MessageBoard\images
-copy .\output\*.dll .\plugins\xenserver.org\MessageBoard
+@echo off
 
+echo Building resources...
 
-Echo creating installer
-powershell -ExecutionPolicy ByPass -File ..\PluginInstaller\Create-PluginInstaller.ps1 -out .\output\MessageBoard.msi -title "XenCenter MessageBoard Plugin" -description "Sample plugin for XenCenter" -manufacturer "XenServer.org" -upgrade_code $([System.Guid]::NewGuid().ToString())
+if exist .\_build  rd .\_build /s /q
 
-Del .\output\*.r* /q
-Del .\output\*.w* /q
+set PLUGIN_DIR=.\_build\Plugins\Citrix\MessageBoard\
+md %PLUGIN_DIR%
 
-Echo Done.
+ResGen MessageBoard.resx MessageBoard.resources
+al /t:lib /embed:MessageBoard.resources /out:MessageBoard.resources.dll
+move MessageBoard.resources.dll %PLUGIN_DIR%
+del MessageBoard.resources
+
+copy *.css  %PLUGIN_DIR%
+copy *.html %PLUGIN_DIR%
+copy *.js   %PLUGIN_DIR%
+copy *.xml  %PLUGIN_DIR%
+copy .\images\*.png %PLUGIN_DIR%
+
+echo Creating installer...
+
+powershell -ExecutionPolicy ByPass -File ..\PluginInstaller\Create-PluginInstaller.ps1 -out .\_build\MessageBoard.msi -title "XenCenter MessageBoard Plugin" -description "Sample plugin for XenCenter" -manufacturer "Citrix" -upgrade_code $([System.Guid]::NewGuid().ToString())
+
+del .\_build\*.w* /q
+echo Done

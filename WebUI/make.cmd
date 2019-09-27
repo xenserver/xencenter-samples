@@ -1,17 +1,17 @@
-Echo Run this make file from a Visual Sutdio Command Prompt
-Echo PowerShell version 2.0 or higher is required to run this
-Echo WiX 2.0 or higher is assumed installed to compile the installer
-Echo Building resources ..
-Del .\plugins\xenserver.org\NetAppWebUI\*.* /q
-Del .\plugins\*.* /q
-cd .\output
-Del *.* /q
-cd ..
-copy *.xml .\plugins\xenserver.org\NetAppWebUI
+@echo off
 
-Echo creating installer
-powershell -ExecutionPolicy ByPass -File ..\PluginInstaller\Create-PluginInstaller.ps1 -out .\output\NetAppWebUI.msi -title "XenCenter NetAppWebUI Plugin" -description "Sample plugin for XenCenter" -manufacturer "XenServer.org" -upgrade_code $([System.Guid]::NewGuid().ToString())
+echo Building resources...
 
-Del .\output\*.w* /q
+if exist .\_build  rd .\_build /s /q
 
-Echo Done.
+set PLUGIN_DIR=.\_build\Plugins\Citrix\NetAppWebUI\
+md %PLUGIN_DIR%
+
+copy *.xml %PLUGIN_DIR%
+
+echo Creating installer...
+
+powershell -ExecutionPolicy ByPass -File ..\PluginInstaller\Create-PluginInstaller.ps1 -out .\_build\NetAppWebUI.msi -title "XenCenter NetAppWebUI Plugin" -description "Sample plugin for XenCenter" -manufacturer "Citrix" -upgrade_code $([System.Guid]::NewGuid().ToString())
+
+del .\_build\*.w* /q
+echo Done
