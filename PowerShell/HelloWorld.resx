@@ -118,24 +118,21 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="hello-menu-item.description" xml:space="preserve">
-    <value> Displays 'Hello World' from the selected object.</value>
+    <value>Displays 'Hello World' from the selected object.</value>
   </data>
   <data name="hello-menu-item.icon" xml:space="preserve">
-    <value>Plugins\Citrix\HelloWorld\HelloWorld.png </value>
+    <value>Plugins\Citrix\HelloWorld\HelloWorld.png</value>
   </data>
   <data name="hello-menu-item.label" xml:space="preserve">
-    <value> Hello World! </value>
+    <value>Hello World!</value>
   </data>
   <data name="HelloWorld.copyright" xml:space="preserve">
-    <value> © Citrix Systems Inc. 2009 </value>
+    <value>Copyright (c) Citrix Systems, Inc.</value>
   </data>
   <data name="HelloWorld.description" xml:space="preserve">
-    <value> XenServer PowerShell plugin example. </value>
+    <value>Citrix Hypervisor PowerShell plug-in example.</value>
   </data>
   <data name="HelloWorld.link" xml:space="preserve">
-    <value> http://community.citrix.com/xencenter</value>
-  </data>
-  <data name="String1" xml:space="preserve">
-    <value />
+    <value>https://www.citrix.com/community/citrix-developer/citrix-hypervisor-developer/</value>
   </data>
 </root>

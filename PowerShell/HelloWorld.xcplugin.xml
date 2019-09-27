@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE XenCenterPlugin PUBLIC "-//XENCENTERPLUGIN//DTD XENCENTERPLUGIN1//EN" "xencenter-1.dtd">
-<XenCenterPlugin 
-	xmlns="http://www.citrix.com/XenCenter/Plugins/schema"
-	version="1">
-	<MenuItem 
-		name="hello-menu-item"
-		menu="view"
-		serialized="none">
-		<XenServerPowerShell 
-			filename="Plugins\xenserver.org\HelloWorld\HelloWorld.ps1" 
-			window="false"
-		/>
-	</MenuItem>
+<XenCenterPlugin xmlns="http://www.citrix.com/XenCenter/Plugins/schema" version="1">
+  <MenuItem name="hello-menu-item" menu="view" serialized="none">
+    <XenServerPowerShell filename="Plugins\Citrix\HelloWorld\HelloWorld.ps1" window="false" />
+  </MenuItem>
 </XenCenterPlugin>

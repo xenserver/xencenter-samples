@@ -21,14 +21,14 @@
 ############################
 
 param(
-  $plugins = ("{0}\\Plugins" -f (get-location)),
+  $plugins = ("{0}\\_build\\Plugins" -f (get-location)),
   $out = "SamplePlugin.msi",
   $wix = "C:\\Program Files (x86)\\WiX Toolset v3.7\\bin",
   #$loc = "$wix\\WixUI_en-us.wxl",
   #$lib = "$wix\\WixUI.wixlib",
   $ui_ref = "WixUI_Mondo",
   $title = "UserPlugins",
-  $manufacturer = "xenserver.org",
+  $manufacturer = "Citrix",
   $description = "XenCenter Plugins",
   $product_version = "1.0.0.0",
   $upgrade_code = "8282b90a-cb51-4c02-a1c1-ecfcff9861bf",
@@ -62,7 +62,7 @@ $product_element_xpath = "/*/*";
 $media_element_xpath = "/*/*/";
 $wix_ns = "http://schemas.microsoft.com/wix/2006/wi"
 $r = new-object System.Random;
-$candle_format = "& '{0}\candle.exe' {1}.wxs -out .\output\ -nologo";
+$candle_format = "& '{0}\candle.exe' {1}.wxs -out .\_build\ -nologo";
 $light_format = "& '{0}\light.exe' -out {1}.msi {1}.wixobj -ext WixUIExtension -cultures:en-us -nologo"
 $wxs_file = ("{0}\{1}.wxs" -f (get-location), ($out).Replace(".msi", ""))
 

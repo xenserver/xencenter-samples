@@ -1160,7 +1160,7 @@ jQuery.extend({
 });
 
 // Use of jQuery.browser is deprecated.
-// It's included for backwards compatibility and plugins,
+// It's included for backwards compatibility and plug-ins,
 // although they should work to migrate away.
 
 var userAgent = navigator.userAgent.toLowerCase();
