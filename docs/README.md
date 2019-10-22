@@ -22,11 +22,13 @@ Adding new tabs is typically accomplished with a web page, or other network serv
 
 ## XenCenter Plug-in Specification
 
-The XenCenter plug-in specification is contained in the file [xc_plugins.pdf](xc_plugins.pdf)
+[Citrix XenCenter Plug-in Specification Guide](https://developer-docs.citrix.com/projects/xencenter-plugin-specification/en/latest/)
+contains the complete specification for developing XenCenter plug-ins.
 
 ## Tutorials and Examples
 
-The following samples demonstrate various ways in which a XenCenter plug-in can be implemented.
+The following samples demonstrate various ways in which a XenCenter plug-in can
+be implemented.
 
 * [Hello World Example - PowerShell](PowerShell.md)
 * [Web UI Tab Example](WebUI.md)
@@ -60,7 +62,8 @@ The result is output in the subfolder `_build` of each sample.
 
 XenCenter provides parameter sets to your plug-in which describe the current
 selection in the XenCenter resource list. Working with parameters can be somewhat
-challenging, therefore we recommend you consult the plug-in specification for more information.
+challenging, therefore we recommend you consult the plug-in specification for more
+information.
 
 ## Community-contributed Plug-ins
 
