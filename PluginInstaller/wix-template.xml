@@ -9,7 +9,7 @@
         <Media Id="1" Cabinet="UserPluginscab.cab" EmbedCab="yes" />
         <Directory Id="TARGETDIR" Name="SourceDir">
             <Directory Id="ProgramFilesFolder">
-                <Directory Id="Citrix" Name="Citrix">
+                <Directory Id="XenServer" Name="XenServer">
                     <Directory Id="INSTALLDIR" ShortName="XenCente" Name="XenCenter">
                         <Directory Id="XCPlugins" Name="Plugins" />
                     </Directory>
@@ -22,8 +22,8 @@
       <UIRef Id="WixUI_ErrorProgressText" />
         <Property Id="Install_All" Value="0" />
         <Property Id="INSTALLDIR">
-            <RegistrySearch Id="XenCenterRegistryLM" Type="raw" Root="HKLM" Key="Software\Citrix\XenCenter" Name="InstallDir" />
-            <RegistrySearch Id="XenCenterRegistryCU" Type="raw" Root="HKCU" Key="Software\Citrix\XenCenter" Name="InstallDir" />
+            <RegistrySearch Id="XenCenterRegistryLM" Type="raw" Root="HKLM" Key="Software\XenServer\XenCenter" Name="InstallDir" />
+            <RegistrySearch Id="XenCenterRegistryCU" Type="raw" Root="HKCU" Key="Software\XenServer\XenCenter" Name="InstallDir" />
         </Property>
         <Property Id="WIXUI_INSTALLDIR" Value="INSTALLDIR" />
         <!--<Property Id="FRAMEWORK20">

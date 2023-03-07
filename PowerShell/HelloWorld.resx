@@ -121,18 +121,18 @@
     <value>Displays 'Hello World' from the selected object.</value>
   </data>
   <data name="hello-menu-item.icon" xml:space="preserve">
-    <value>Plugins\Citrix\HelloWorld\HelloWorld.png</value>
+    <value>Plugins\XenServer\HelloWorld\HelloWorld.png</value>
   </data>
   <data name="hello-menu-item.label" xml:space="preserve">
     <value>Hello World!</value>
   </data>
   <data name="HelloWorld.copyright" xml:space="preserve">
-    <value>Copyright (c) Citrix Systems, Inc.</value>
+    <value>Copyright (c) Cloud Software Group, Inc.</value>
   </data>
   <data name="HelloWorld.description" xml:space="preserve">
-    <value>Citrix Hypervisor PowerShell plug-in example.</value>
+    <value>XenServer PowerShell plug-in example.</value>
   </data>
   <data name="HelloWorld.link" xml:space="preserve">
-    <value>https://www.citrix.com/community/citrix-developer/citrix-hypervisor-developer/</value>
+    <value>https://docs.citrix.com/en-us/citrix-hypervisor/developer.html</value>
   </data>
 </root>

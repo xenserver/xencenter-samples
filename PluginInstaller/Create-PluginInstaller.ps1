@@ -28,7 +28,7 @@ param(
   #$lib = "$wix\\WixUI.wixlib",
   $ui_ref = "WixUI_Mondo",
   $title = "UserPlugins",
-  $manufacturer = "Citrix",
+  $manufacturer = "XenServer",
   $description = "XenCenter Plugins",
   $product_version = "1.0.0.0",
   $upgrade_code = "8282b90a-cb51-4c02-a1c1-ecfcff9861bf",

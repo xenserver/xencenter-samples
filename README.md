@@ -10,7 +10,7 @@ in various languages and build an installer for it.
 
 ## Documentation
 
-[Citrix XenCenter Plug-in Specification Guide](https://developer-docs.citrix.com/projects/xencenter-plugin-specification/en/latest/)
+[XenCenter Plug-in Specification Guide](https://docs.citrix.com/en-us/citrix-hypervisor/developer/xencenter-plugin-specification.html)
 contains the complete specification for developing XenCenter plug-ins.
 
 A walk-through of the examples and instructions on how to compile the plug-in
@@ -18,8 +18,9 @@ installers are available in the [docs](docs/README.md) pages.
 
 ## Maintainers
 
-* Mihaela Stoica <mihaela.stoica@citrix.com>
-* Konstantina Chremmou <konstantina.chremmou@citrix.com>
+* Konstantina Chremmou <konstantina.chremmou@cloud.com>
+* Danilo Del Busso <danilo.delbusso@cloud.com>
+* Chris Lancaster <chris.lancaster@cloud.com>
 
 Questions related to these samples can be posted on this repo's
 [issues](https://github.com/xenserver/xencenter-samples/issues) page.

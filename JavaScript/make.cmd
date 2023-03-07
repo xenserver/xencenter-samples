@@ -4,7 +4,7 @@ echo Building resources...
 
 if exist .\_build  rd .\_build /s /q
 
-set PLUGIN_DIR=.\_build\Plugins\Citrix\MessageBoard\
+set PLUGIN_DIR=.\_build\Plugins\XenServer\MessageBoard\
 md %PLUGIN_DIR%
 
 ResGen MessageBoard.resx MessageBoard.resources
@@ -20,7 +20,7 @@ copy .\images\*.png %PLUGIN_DIR%
 
 echo Creating installer...
 
-powershell -ExecutionPolicy ByPass -File ..\PluginInstaller\Create-PluginInstaller.ps1 -out .\_build\MessageBoard.msi -title "XenCenter MessageBoard Plugin" -description "Sample plugin for XenCenter" -manufacturer "Citrix" -upgrade_code $([System.Guid]::NewGuid().ToString())
+powershell -ExecutionPolicy ByPass -File ..\PluginInstaller\Create-PluginInstaller.ps1 -out .\_build\MessageBoard.msi -title "XenCenter MessageBoard Plugin" -description "Sample plugin for XenCenter" -manufacturer "XenServer" -upgrade_code $([System.Guid]::NewGuid().ToString())
 
 del .\_build\*.w* /q
 echo Done

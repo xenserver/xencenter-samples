@@ -7,7 +7,9 @@ plug-in. This example covers all the basics of producing a MenuItem plug-in for
 XenCenter using PowerShell. It also demonstrates how to resource and deploy your
 plug-in.
 
-**Objective**: We would like a new menu item in XenCenter which launches a pop-up
+## Objective
+
+We would like a new menu item in XenCenter which launches a pop-up
 message saying "Hello from ..." followed by the names of whichever objects are
 selected in the XenCenter resource list (treeview).
 
@@ -28,9 +30,9 @@ make.cmd
 
 The result is output in the subfolder `_build`.
 
-This example uses the Citrix Hypervisor PowerShell module (XenServerPSModule) to
+This example uses the XenServer PowerShell module (XenServerPSModule) to
 communicate with the servers listed in XenCenter. This is available within the
-Citrix Hypervisor [SDK](https://github.com/xapi-project/xen-api-sdk).
+XenServer [SDK](https://github.com/xapi-project/xen-api/tree/master/ocaml/sdk-gen).
 
 ## Plug-in file
 
@@ -67,7 +69,7 @@ directory of the XenCenter executable.
 want this, let's turn it off.
 
 ```xml
-<XenServerPowerShell filename="Plugins\Citrix\HelloWorld\HelloWorld.ps1" window="false" />
+<XenServerPowerShell filename="Plugins\XenServer\HelloWorld\HelloWorld.ps1" window="false" />
 ```
 
 Close off all the tags and save as `HelloWorld.xcplugin.xml`. The name of this
@@ -87,12 +89,12 @@ found in the specification. Here is the resources table for this plugin.
 
 |Name|Value|
 |---|---|
-|HelloWorld.description|Citrix Hypervisor PowerShell plugin example|
-|HelloWorld.copyright|Copyright (c) Citrix Systems, Inc.|
-|HelloWorld.link|<https://www.citrix.com/community/citrix-developer/citrix-hypervisor-developer/>|
+|HelloWorld.description|XenServer PowerShell plugin example|
+|HelloWorld.copyright|Copyright (c) Cloud Software Group, Inc.|
+|HelloWorld.link|<https://docs.citrix.com/en-us/citrix-hypervisor/developer.html>|
 |hello-menu-item.label|Hello World!|
 |hello-menu-item.description|Displays 'Hello World' from the selected object|
-|hello-menu-item.icon|Plugins\Citrix\HelloWorld\HelloWorld.png|
+|hello-menu-item.icon|Plugins\XenServer\HelloWorld\HelloWorld.png|
 
  The final step is to convert this `.resx` into a DLL. We do this with two tools:
 

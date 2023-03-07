@@ -3,8 +3,8 @@
   xmlns="http://www.citrix.com/XenCenter/Plugins/schema"
   version="1"
   plugin_version="1.0.0.0"
-  copyright="Copyright (c) Citrix Systems, Inc."
-  link="https://www.citrix.com/community/citrix-developer/citrix-hypervisor-developer/">
+  copyright="Copyright (c) Cloud Software Group, Inc."
+  link="https://docs.citrix.com/en-us/citrix-hypervisor/developer.html">
   <TabPage name="Web UI" url="http://{$ip_address}/na_admin/" search="4f40121b-cc67-4b38-a93b-e72959bf0904" />
   <Search uuid="4f40121b-cc67-4b38-a93b-e72959bf0904" name="NetApp SRs" major_version="2" minor_version="0" show_expanded="yes">
     <Query>
