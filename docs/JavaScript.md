@@ -2,11 +2,11 @@
 
 ## Introduction
 
-This is an advanced example of using JavaScript to make API calls to Citrix
-Hypervisor on a XenCenter TabPage plug-in.
+This is an advanced example of using JavaScript to make API calls to XenServer
+on a XenCenter TabPage plug-in.
 
 By using some modified jQuery libraries it is possible to run JavaScript from a
-local `.html` file and pass XML-RPC requests through XenCenter onto the server.
+local `.html` file and pass RPC requests through XenCenter onto the server.
 This enables you to create JavaScript based UI additions to XenCenter.
 
 **Objective:** Add a Message Board for each of your server objects, where people
@@ -44,7 +44,7 @@ information to the HTML DOM:
 <XenCenterPlugin xmlns="http://www.citrix.com/XenCenter/Plugins/schema" version="1" plugin_version="1.0.0.0">
   <TabPage
   name="Message_Board"
-  url="Plugins/Citrix/MessageBoard/MessageBoard.html"
+  url="Plugins/XenServer/MessageBoard/MessageBoard.html"
   relative="true"
   credentials="true"
   search="70ecbca9-20e7-4f57-b079-fe3aab968cbc"/>
@@ -78,9 +78,9 @@ Here is the resources table for this plug-in.
 
 |Name|Value|
 |---|---|
-|MessageBoard.description|Citrix Hypervisors JavaScript plug-in example|
-|MessageBoard.copyright|Copyright (c) Citrix Systems, Inc.|
-|MessageBoard.link|<https://www.citrix.com/community/citrix-developer/citrix-hypervisor-developer/>|
+|MessageBoard.description|XenServer JavaScript plug-in example|
+|MessageBoard.copyright|Copyright (c) Cloud Software Group, Inc.|
+|MessageBoard.link|<https://docs.citrix.com/en-us/citrix-hypervisor/developer.html>|
 |Message_Board.label|Message Board|
 
 ## HTML File

@@ -1,11 +1,11 @@
 # XenCenter Plug-in Development
 
-XenCenter is the management console used with Citrix Hypervisor, a leading open
+XenCenter is the management console used with XenServer, a leading open
 source virtualization platform, powered by the
 [Xen Project hypervisor](http://xenproject.org/developers/teams/hypervisor.html)
 and the [XAPI toolstack](http://xenproject.org/developers/teams/xapi.html). From
 XenCenter you can natively perform common operations such as starting, stopping
-and migrating a VM, and administering the Citrix Hypervisor resource pool which
+and migrating a VM, and administering the XenServer resource pool which
 hosts those VMs. While these common operations are seemlessly handled, there are
 times when external operations are needed. To address those scenarios, XenCenter
 implements a plug-in architecture.
@@ -22,7 +22,7 @@ Adding new tabs is typically accomplished with a web page, or other network serv
 
 ## XenCenter Plug-in Specification
 
-[Citrix XenCenter Plug-in Specification Guide](https://developer-docs.citrix.com/projects/xencenter-plugin-specification/en/latest/)
+[XenCenter Plug-in Specification Guide](https://docs.citrix.com/en-us/citrix-hypervisor/developer/xencenter-plugin-specification.html)
 contains the complete specification for developing XenCenter plug-ins.
 
 ## Tutorials and Examples

@@ -73,8 +73,8 @@ Here is a list of labels used in the resources file.
 |Name|Label|
 |---|---|
 |NetAppWebUI.description|Show NetApp web interface in XenCenter.|
-|NetAppWebUI.copyright|Copyright (c) Citrix Systems, Inc.|
-|NetAppWebUI.link|<https://www.citrix.com/community/citrix-developer/citrix-hypervisor-developer/>|
+|NetAppWebUI.copyright|Copyright (c) Cloud Software Group, Inc.|
+|NetAppWebUI.link|<https://docs.citrix.com/en-us/citrix-hypervisor/developer.html>|
 |webui-tab.label|NetApp Configuration|
 
 ## Screenshots
