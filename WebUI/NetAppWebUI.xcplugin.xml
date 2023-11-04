@@ -4,7 +4,7 @@
   version="1"
   plugin_version="1.0.0.0"
   copyright="Copyright (c) Cloud Software Group, Inc."
-  link="https://docs.citrix.com/en-us/citrix-hypervisor/developer.html">
+  link="https://docs.xenserver.com/en-us/xenserver/8/developer">
   <TabPage name="Web UI" url="http://{$ip_address}/na_admin/" search="4f40121b-cc67-4b38-a93b-e72959bf0904" />
   <Search uuid="4f40121b-cc67-4b38-a93b-e72959bf0904" name="NetApp SRs" major_version="2" minor_version="0" show_expanded="yes">
     <Query>
