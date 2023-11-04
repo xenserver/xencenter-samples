@@ -1,5 +1,16 @@
 # XenCenter Plug-in Examples
 
+[XenCenter](https://github.com/xenserver/xenadmin)
+is the management console used with [XenServer](https://www.xenserver.com/),
+a leading open source virtualization platform, powered by the
+[Xen Project hypervisor](http://xenproject.org/developers/teams/hypervisor.html)
+and the [XAPI toolstack](http://xenproject.org/developers/teams/xapi.html).
+From XenCenter you can natively perform common operations such as starting,
+stopping and migrating a VM, and administering the XenServer resource pool
+which hosts those VMs. While these common operations are seemlessly handled,
+there are times when external operations are needed. To address those
+scenarios, XenCenter implements a plug-in architecture.
+
 XenCenter has plug-in capabilities which allow you to add custom menu items or
 even whole tabs to the XenCenter window. You might do this as an ISV to integrate
 your own product with XenCenter, or as an end-user to integrate with your
@@ -10,7 +21,7 @@ in various languages and build an installer for it.
 
 ## Documentation
 
-[XenCenter Plug-in Specification Guide](https://docs.citrix.com/en-us/citrix-hypervisor/developer/xencenter-plugin-specification.html)
+[XenCenter Plug-in Specification Guide](https://docs.xenserver.com/en-us/xenserver/8/developer/xencenter-plugin-specification)
 contains the complete specification for developing XenCenter plug-ins.
 
 A walk-through of the examples and instructions on how to compile the plug-in

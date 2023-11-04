@@ -124,6 +124,6 @@
     <value>Message Board JavaScript plug-in example.</value>
   </data>
   <data name="MessageBoard.link" xml:space="preserve">
-    <value>https://docs.citrix.com/en-us/citrix-hypervisor/developer.html</value>
+    <value>https://docs.xenserver.com/en-us/xenserver/8/developer</value>
   </data>
 </root>

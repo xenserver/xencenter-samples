@@ -32,7 +32,7 @@ The result is output in the subfolder `_build`.
 
 This example uses the XenServer PowerShell module (XenServerPSModule) to
 communicate with the servers listed in XenCenter. This is available within the
-XenServer [SDK](https://github.com/xapi-project/xen-api/tree/master/ocaml/sdk-gen).
+XenServer [SDK](https://docs.xenserver.com/en-us/xenserver/8/developer/sdk-guide).
 
 ## Plug-in file
 
@@ -91,7 +91,7 @@ found in the specification. Here is the resources table for this plugin.
 |---|---|
 |HelloWorld.description|XenServer PowerShell plugin example|
 |HelloWorld.copyright|Copyright (c) Cloud Software Group, Inc.|
-|HelloWorld.link|<https://docs.citrix.com/en-us/citrix-hypervisor/developer.html>|
+|HelloWorld.link|<https://docs.xenserver.com/en-us/xenserver/8/developer>|
 |hello-menu-item.label|Hello World!|
 |hello-menu-item.description|Displays 'Hello World' from the selected object|
 |hello-menu-item.icon|Plugins\XenServer\HelloWorld\HelloWorld.png|

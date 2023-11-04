@@ -80,7 +80,7 @@ Here is the resources table for this plug-in.
 |---|---|
 |MessageBoard.description|XenServer JavaScript plug-in example|
 |MessageBoard.copyright|Copyright (c) Cloud Software Group, Inc.|
-|MessageBoard.link|<https://docs.citrix.com/en-us/citrix-hypervisor/developer.html>|
+|MessageBoard.link|<https://docs.xenserver.com/en-us/xenserver/8/developer>|
 |Message_Board.label|Message Board|
 
 ## HTML File
@@ -267,7 +267,7 @@ functions refer to the full MessageBoard.js.
 ```JavaScript
 function AddMessage() {
   var title = prompt("Enter a title for your message", "");
-  
+
   if (title == null || title == "") {
     alert("Cannot create a message without a title. Try again, choosing a non blank, unique title.");
     return;
