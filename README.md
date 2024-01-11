@@ -2,9 +2,7 @@
 
 [XenCenter](https://github.com/xenserver/xenadmin)
 is the management console used with [XenServer](https://www.xenserver.com/),
-a leading open source virtualization platform, powered by the
-[Xen Project hypervisor](http://xenproject.org/developers/teams/hypervisor.html)
-and the [XAPI toolstack](http://xenproject.org/developers/teams/xapi.html).
+a leading open source virtualization platform.
 From XenCenter you can natively perform common operations such as starting,
 stopping and migrating a VM, and administering the XenServer resource pool
 which hosts those VMs. While these common operations are seemlessly handled,
