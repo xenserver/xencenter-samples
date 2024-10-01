@@ -1,6 +1,6 @@
 # XenCenter Plug-in Examples
 
-[XenCenter](https://github.com/xenserver/xenadmin)
+[XenCenter](https://docs.xenserver.com/en-us/xencenter)
 is the management console used with [XenServer](https://www.xenserver.com/),
 a leading open source virtualization platform.
 From XenCenter you can natively perform common operations such as starting,
@@ -25,11 +25,7 @@ contains the complete specification for developing XenCenter plug-ins.
 A walk-through of the examples and instructions on how to compile the plug-in
 installers are available in the [docs](docs/README.md) pages.
 
-## Maintainers
-
-* Konstantina Chremmou <konstantina.chremmou@cloud.com>
-* Danilo Del Busso <danilo.delbusso@cloud.com>
-* Chris Lancaster <chris.lancaster@cloud.com>
+## Issues
 
 Questions related to these samples can be posted on this repo's
 [issues](https://github.com/xenserver/xencenter-samples/issues) page.
